@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event</title>
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css
+        href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+    <!--Header-->
+    <div class="activity-intro">
+        <!--Navbar-->
+        <nav class="navbar fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/"><strong>Wooster</strong></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/event">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/activity">Activity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/person">Person</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!--Table-->
+        <div id="activity_table" class="container">
+            <h1>Activity List</h1>
+            <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for activity in activities %}
+            <tr>
+                <th scope="row">{{activity['activity_id']}}</th>
+                <td>{{activity['name']}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        </div>
+        <!--Form-->
+        <div class="container">
+    <form class="form-inline" action="{{ url_for('activity_view') }}" method=get>
+      <div class="form-group">
+        <p class="form-control-static">Activity API  </p>
+      </div>
+      <a type="submit" class="btn btn-white" href="api/activity">Goto</a>
+    </form>
+    <form class="form-inline" action="{{ url_for('activity_view') }}" method=post>
+      <div class="form-group">
+        <p class="form-control-static">Book an event  </p>
+      </div>
+      <div class="form-group mx-sm-3">
+        <input type="text" class="form-control" name="name" placeholder="<name>">
+      </div>
+      <button type="submit" class="btn btn-white">Add</button>
+    </form>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css
+        href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+    <body>
+
+        <!--Header-->
+        <header class="home-intro">
+
+            <!--Navbar-->
+            <nav class="navbar fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/"><strong>Wooster</strong></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/event">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/activity">Activity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/person">Person</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Intro Section-->
+            <section class="view">
+                <div class="full-bg-img">
+                    <div class="container flex-center">
+                        <div class="row flex-center pt-5 mt-3">
+                            <div class="text-center text-md-left margins">
+                                <div class="white-text">
+                                    <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s">Wooster Booking System</h1>
+                                        <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                                        <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Hi, class! This is our booking app!!!</h6>
+                                        <br>
+                                        <a class="btn btn-white" href="/event">Reserve</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </header>
+
+        <!--Footer-->
+        <footer class="page-footer font-small">
+
+            <!--Footer Information-->
+            <div class="container text-center text-md-left">
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Deliverables</h5>
+                        <p>Made HTML with Bootstrap</p>
+                        <p>Made DB class holding codes interacting with database</p>
+                        <p>Made API</p>
+                        <p>Made Test</p>
+                    </div>
+                    <!--/.First column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!--Second column-->
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Thomas Gin</h5>
+                        <ul class="list-unstyled">
+                            <li>tgin19@wooster.edu</li>
+                            <li>330-330-3300</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!--/.Second column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!--Third column-->
+                    <div class="col-md-2 mx-auto">
+                       <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Emily Skerl</h5>
+                        <ul class="list-unstyled">
+                            <li>eskerl20@wooster.edu</li>
+                            <li>330-330-3300</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!--/.Third column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!--Fourth column-->
+                    <div class="col-md-2 mx-auto">
+                       <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Cooper Bodary</h5>
+                        <ul class="list-unstyled">
+                            <li>cbodary19@wooster.edu</li>
+                            <li>330-330-3300</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!--/.Fourth column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!--Fifth column-->
+                    <div class="col-md-2 mx-auto">
+                       <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Jianqiu Bai</h5>
+                        <ul class="list-unstyled">
+                            <li>jbai18@wooster.edu</li>
+                            <li>330-330-3300</li>
+                        </ul>
+                    </div>
+                    <!--/.Fifth column-->
+                </div>
+            </div>
+            <!--/.Footer Information-->
+
+            <!--Copyright-->
+            <div class="footer-copyright py-3 text-center">
+                © 2018 Copyright:
+                <a href="https://github.com/cs232s18/Hip_Flask_Project"> Hip Flask Team </a>
+            </div>
+            <!--/.Copyright-->
+
+</footer>
+        <!--/.Footer-->
+
+    </body>
+</html>
